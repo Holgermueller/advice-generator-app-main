@@ -2,26 +2,57 @@ body,
 html {
   padding: 0;
   margin: 0;
-  background-color: #1f2632;
+  background-color: hsl(218, 23%, 16%);
   height: 100vh;
   display: grid;
   place-items: center;
   align-content: center;
+  font-weight: 800;
+  font-family: "Manrope";
 }
 
 .advice-container {
   padding: 24px;
-  background-color: hsl(217, 19%, 38%);
+  background-color: hsl(217, 19%, 24%);
   border-radius: 10px;
   text-align: center;
+  max-width: 55%;
+  margin: auto;
 }
 
 .advice-number {
   color: hsl(150, 100%, 66%);
+  letter-spacing: 0.25rem;
+  text-transform: uppercase;
+  padding-bottom: 24px;
 }
 
 .advice-display {
   color: hsl(193, 38%, 86%);
+  font-size: 28px;
+  padding-bottom: 24px;
+}
+
+.svg-container {
+  text-align: center;
+  margin: auto;
+  width: 85%;
+}
+
+/* .divider {
+  display: block;
+  margin: auto;
+} */
+
+button {
+  border-radius: 50%;
+  border: none;
+  background-color: hsl(150, 100%, 66%);
+  padding: 12px 16px;
+  cursor: pointer;
+  vertical-align: middle;
+  display: inline-flex;
+  transform: translateY(3rem);
 }
 
 footer {
@@ -35,4 +66,10 @@ footer {
 
 a {
   color: hsl(150, 100%, 66%);
+}
+
+@media screen and (width: 375px) {
+  .advice-container {
+    width: 95%;
+  }
 }

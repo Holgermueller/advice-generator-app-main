@@ -3,7 +3,21 @@
 const getAdvice = () => {
   const adviceURL = "https://api.adviceslip.com/advice";
 
-  fetch(adviceURL).then((response) => {
-    console.log(response);
-  });
+  fetch(adviceURL)
+    .then((response) => {
+      if (!response.ok) {
+        throw new Error("Network response was not ok.");
+      }
+      return response.json();
+    })
+    .then((data) => {
+      let adviceID = data.slip.id;
+      let advice = data.slip.advice;
+      document.getElementById("adviceNumber").innerHTML = "Advice #" + adviceID;
+      document.getElementById("advice").innerHTML = '"' + advice + '"';
+      console.log(data.slip);
+    })
+    .catch((error) => {
+      console.error("Error: ", error);
+    });
 };
