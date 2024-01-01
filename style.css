@@ -1,0 +1,38 @@
+body,
+html {
+  padding: 0;
+  margin: 0;
+  background-color: #1f2632;
+  height: 100vh;
+  display: grid;
+  place-items: center;
+  align-content: center;
+}
+
+.advice-container {
+  padding: 24px;
+  background-color: hsl(217, 19%, 38%);
+  border-radius: 10px;
+  text-align: center;
+}
+
+.advice-number {
+  color: hsl(150, 100%, 66%);
+}
+
+.advice-display {
+  color: hsl(193, 38%, 86%);
+}
+
+footer {
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  position: absolute;
+  color: hsl(193, 38%, 86%);
+  text-align: center;
+}
+
+a {
+  color: hsl(150, 100%, 66%);
+}
