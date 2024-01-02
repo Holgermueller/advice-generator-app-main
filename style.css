@@ -34,15 +34,10 @@ html {
 }
 
 .svg-container {
-  text-align: center;
+  width: 95%;
   margin: auto;
-  width: 85%;
+  justify-content: center;
 }
-
-/* .divider {
-  display: block;
-  margin: auto;
-} */
 
 button {
   border-radius: 50%;
