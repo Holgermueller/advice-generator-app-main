@@ -15,9 +15,12 @@ const getAdvice = () => {
       let advice = data.slip.advice;
       document.getElementById("adviceNumber").innerHTML = "Advice #" + adviceID;
       document.getElementById("advice").innerHTML = '"' + advice + '"';
-      console.log(data.slip);
     })
     .catch((error) => {
       console.error("Error: ", error);
     });
+};
+
+window.onload = () => {
+  getAdvice();
 };
